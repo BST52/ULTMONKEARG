@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Police Report</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 40px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: crimson;
+      text-shadow: 0 0 5px red;
+    }
+    .glitch {
+      color: #ff0000;
+      text-shadow: 0 0 2px #ff0000;
+      animation: flicker 1s infinite;
+    }
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>POLICE REPORT - CASE FILE #0451</h1>
+  <p><strong>DATE:</strong> July 2025</p>
+  <p><strong>SUMMARY:</strong> What looks like a home break-in. Neighbors reported seeing a strange black figure at night breaking into the house of the current victim and also missing person known as <strong>ULTmonke</strong>.</p>
+  <p>After further investigation, we found a journal with 6 pages — but <span class="glitch">one of the pages is missing</span>.</p>
+  <p>We will continue investigating, but for now, we must make this known to the public: <em>Do not go inside <span class="glitch">[REDACTED]</span> forest</em>. If our suspect is still there, it might be too dangerous.</p>
+</body>
+</html>
