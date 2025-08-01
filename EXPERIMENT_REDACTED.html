@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiment Report - [REDACTED]</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #101010;
+      color: #e0e0e0;
+      font-family: "Courier New", Courier, monospace;
+      padding: 40px;
+    }
+    h1 {
+      color: #00ffcc;
+      border-bottom: 1px solid #00ffcc;
+    }
+    .entry {
+      margin-top: 30px;
+    }
+    .redacted {
+      background-color: #111;
+      color: #111;
+      border-bottom: 1px solid #444;
+      display: inline-block;
+    }
+    .glitch {
+      color: #ff3333;
+      text-shadow: 0 0 2px #ff0000;
+      animation: glitchBlink 1s infinite;
+    }
+    @keyframes glitchBlink {
+      0%, 100% { opacity: 0.1; }
+      50% { opacity: 1; }
+    }
+
+    .glitch-final {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      color: #ff0033;
+      font-size: 12px;
+      text-decoration: none;
+      text-shadow: 0 0 2px #ff0033;
+      animation: flickerFinal 1s infinite;
+    }
+
+    @keyframes flickerFinal {
+      0%, 100% { opacity: 0.1; }
+      50% { opacity: 0.9; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Experiment Log - Case #[REDACTED]</h1>
+
+  <div class="entry">
+    <p><strong>Date:</strong> [REDACTED]</p>
+    <p><strong>Location:</strong> Containment Site <span class="redacted">██████</span></p>
+    <p><strong>Summary:</strong> Subject "ULTmonke" was observed under controlled conditions following the forest encounter. Initial scans revealed high-level neural interference patterns. Audio logs captured incoherent mumbling and what appear to be <span class="glitch">non-human frequencies</span>.</p>
+    <p>Attempts to analyze foreign cellular matter resulted in corrupted data files. Further testing was halted following incident #0451. All personnel were advised to avoid direct contact with the subject.</p>
+  </div>
+
+  <a href="ULTMONKEISMISSING.html" class="glitch-final">██ULT██</a>
+</body>
+</html>
