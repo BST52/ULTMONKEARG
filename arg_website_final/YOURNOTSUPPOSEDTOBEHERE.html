@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You’re Not Supposed to Be Here</title>
+  <style>
+    body {
+      background-color: black;
+      color: #ccc;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .message {
+      font-size: 1.5em;
+      text-align: center;
+      animation: flicker 2s infinite alternate;
+    }
+
+    .glitch-sr {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      color: #ff00ff;
+      text-decoration: none;
+      font-size: 12px;
+      text-shadow: 0 0 2px #ff00ff;
+      animation: srGlitch 1.2s infinite;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 0.9; }
+      100% { opacity: 0.6; }
+    }
+
+    @keyframes srGlitch {
+      0%, 100% { opacity: 0.2; transform: translateX(0); }
+      50% { opacity: 1; transform: translateX(1px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">You’re not supposed to be here...</div>
+  <a href="EXPERIMENT_REDACTED.html" class="glitch-sr">SR</a>
+</body>
+</html>
