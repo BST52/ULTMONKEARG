@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Old Journal Page</title>
+  <style>
+    body {
+      background-color: black;
+      color: #ff0044;
+      font-family: monospace;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 24px;
+      animation: glitch-text 1s infinite alternate;
+    }
+    .hidden-creature {
+      position: fixed;
+      bottom: 5px;
+      right: 10px;
+      font-size: 10px;
+      color: rgba(255,255,255,0.04);
+      text-decoration: none;
+    }
+    .hidden-creature:hover {
+      color: red;
+      text-shadow: 0 0 5px red;
+    }
+    @keyframes glitch-text {
+      0% { text-shadow: 2px 0 red; }
+      100% { text-shadow: -2px 0 blue; }
+    }
+  </style>
+</head>
+<body>
+  <h1>PAGE 4</h1>
+  <p>The creature it came by and it started pushing the tree I'm on over. But after some failed attempts it walked away. It doesn't seem to be very strong so I think I'll be safe so I'm gonna get some sleep and get out of here in the morning. I can see some giant building that looks like a laboratory so maybe I can head over there and tell them what I seen. I have a feeling they know what this thing is.</p>
+
+  <a class="hidden-creature" href="THECREATURE.html">CREATURE</a>
+</body>
+</html>
